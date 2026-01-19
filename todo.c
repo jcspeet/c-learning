@@ -9,8 +9,17 @@ int main() {
     scanf("%d", &choice);
 
     printf("You chose %d\n", choice);
+    
 
 
 }
 
+ void addTask(int num){
+    
+    
 
+}
+
+
+ void deleteTask(int num){
+ }
