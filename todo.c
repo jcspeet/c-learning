@@ -1,4 +1,12 @@
 #include <stdio.h>
+#include <string.h>
+
+#define MAX_TASKS 30
+
+char tasks[MAX_TASKS][50];
+int task_count = 0;
+void addTask();
+void deleteTask();
 
 int main() {
     int choice;
@@ -9,17 +17,24 @@ int main() {
     scanf("%d", &choice);
 
     printf("You chose %d\n", choice);
+
+    if (choice == 1) {
+        addTask();
+    }
     
 
 
 }
 
- void addTask(int num){
-    
-    
+ void addTask(){
+    char task[50];
+    printf("What task do you wish to add?\n");
+    scanf("%s", task);
+
+    strcpy(tasks[task_count], task);
 
 }
 
 
- void deleteTask(int num){
+ void deleteTask(){
  }
